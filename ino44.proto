@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package ino44;
+
+message Req {
+  string msg = 1;
+}
+
+message Res {
+  string msg = 1;
+}
+
+service Ino44Service {
+  rpc Attack (Req) returns (Res) {}
+}
